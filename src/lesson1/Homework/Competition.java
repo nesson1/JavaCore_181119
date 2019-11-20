@@ -25,7 +25,7 @@ public class Competition {
         for (Participant c : Participants ) {
             for (Obstacle o : Obstacles) {
                 o.doIt(c);
-                if (!c.isOnDistance()){
+                if (!c.isOnDistance()) {
                     break;
                 }
             }
