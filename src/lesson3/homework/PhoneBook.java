@@ -12,6 +12,12 @@ public class PhoneBook implements PhoneBookInterface {
     }
 
     private Set<String> getPhones(String surname) {
+//        Set<String> phones = phonesBySurname.get(surname);
+//        if (phones == null) {
+//            phones = new HashSet<>();
+//            phonesBySurname.put(surname, phones);
+//        }
+//        return phones;
         return phonesBySurname.computeIfAbsent(surname, key -> new HashSet<>());
     }
 
